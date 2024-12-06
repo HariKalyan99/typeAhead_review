@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-let token = "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"
+let token = import.meta.env.VITE_API_TOKEN;
 function App() {
   const [getSearch, setSearch] = useState("");
   const [githubData, setGithubData] = useState([]);
